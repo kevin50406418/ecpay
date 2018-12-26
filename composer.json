@@ -40,7 +40,7 @@
 	  ]
 	},
 	"aliases": {
-	  "Ecpay": "Kevin50406418\\Ecpay\\Facade"
+	  "Ecpay": "Kevin50406418\\Ecpay\\Facade\\Ecpay"
 	}
   }
 }

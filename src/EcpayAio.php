@@ -2,15 +2,14 @@
 
 namespace Kevin50406418\Ecpay;
 
-class Ecpay
+class EcpayAio
 {
     private $instance = null;
 
-    //--------------------------------------------------------
     public function __construct()
     {
         $this->instance = new EcpayFactory();
-        config('ecpay.TestMode') ? $this->setForTest() : $this->setForProd();
+        config('ecpay.TestMode', false) ? $this->setForTest() : $this->setForProd();
     }
 
     public function instance()
