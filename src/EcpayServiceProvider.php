@@ -31,7 +31,9 @@ class EcpayServiceProvider extends ServiceProvider
     {
         //Facade => Custom Class
         $this->app->singleton('ecpay', function ($app){
-            return new Ecpay;
+            return new Ecpay();
         });
+
+        $this->app->alias(Ecpay::class, 'ecpay');
     }
 }

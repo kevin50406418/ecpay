@@ -1,4 +1,5 @@
 <?php
+
 namespace Kevin50406418\Ecpay;
 
 class Facade extends \Illuminate\Support\Facades\Facade
@@ -8,6 +9,6 @@ class Facade extends \Illuminate\Support\Facades\Facade
      */
     protected static function getFacadeAccessor()
     {
-        return Ecpay::class;
+        return 'ecpay';
     }
 }
