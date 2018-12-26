@@ -2,8 +2,6 @@
 
 namespace Kevin50406418\Ecpay;
 
-use Kevin50406418\Ecpay\EcpayFactory;
-
 class Ecpay
 {
     private $instance = null;
@@ -41,6 +39,5 @@ class Ecpay
         $this->instance->HashIV      = config('ecpay.HashIV');
         $this->instance->MerchantID  = config('ecpay.MerchantID');
         $this->instance->EncryptType = config('ecpay.EncryptType');
-
     }
 }
