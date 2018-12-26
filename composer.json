@@ -4,7 +4,6 @@
   "type": "ecTool",
   "keywords": [
 	"laravel",
-	"allpay",
 	"ecpay"
   ],
   "authors": [
@@ -41,7 +40,7 @@
 	  ]
 	},
 	"aliases": {
-	  "Ecpay": "Kevin50406418\\Ecpay\\Ecpay"
+	  "Ecpay": "Kevin50406418\\Ecpay\\Facade\\Ecpay"
 	}
   }
 }
