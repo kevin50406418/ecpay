@@ -1,5 +1,5 @@
 {
-  "name": "kevin50406418/aio",
+  "name": "kevin50406418/ecpay",
   "description": "Ecpay Laravel 5 version",
   "type": "ecTool",
   "keywords": [
@@ -27,7 +27,7 @@
 	  "src/lib"
 	],
 	"psr-4": {
-	  "Kevin50406418\\Aio\\": "src/"
+	  "Kevin50406418\\Ecpay\\": "src/"
 	}
   },
   "config": {
