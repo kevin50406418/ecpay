@@ -37,6 +37,12 @@
 </head>
 <body>
 <h1>正在導向到綠界...</h1>
+<form action="{{ $ServiceURL }}" id="form" method="post" hidden>
+	@foreach($parameters as $key => $parameter)
+		<input type="hidden" name="{{ $key }}" value="{{ $parameter }}">
+	@endforeach
+</form>
+
 <div class="loader loader--style8" title="7">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
@@ -57,6 +63,10 @@
 		</rect>
   </svg>
 </div>
-
+<script>
+	setTimeout(function(){
+		document.getElementById('form').submit();
+	}, 1000);
+</script>
 </body>
 </html>
