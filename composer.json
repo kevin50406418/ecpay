@@ -1,0 +1,47 @@
+{
+  "name": "kevin50406418/aio",
+  "description": "AIo - Allpay, Ecpay Laravel 5 version",
+  "type": "ecTool",
+  "keywords": [
+	"laravel",
+	"allpay",
+	"ecpay"
+  ],
+  "authors": [
+	{
+	  "name": "Jingxun Lai",
+	  "email": "kevin50406418@gmail.com"
+	}
+  ],
+  "license": "MIT",
+  "require": {
+	"php": "^5.6.0 || ^7.0",
+	"illuminate/support": "^5.5,<5.8"
+  },
+  "require-dev": {
+	"illuminate/config": "^5.5,<5.8",
+	"illuminate/view": "^5.5,<5.8"
+  },
+  "autoload": {
+	"classmap": [
+	  "src/lib"
+	],
+	"psr-4": {
+	  "Kevin50406418\\Aio\\": "src/"
+	}
+  },
+  "config": {
+	"sort-packages": true
+  },
+  "prefer-stable": true,
+  "extra": {
+	"laravel": {
+	  "providers": [
+		"Kevin50406418\\Ecpay\\EcpayServiceProvider"
+	  ]
+	},
+	"aliases": {
+	  "Ecpay": "Kevin50406418\\Ecpay\\Ecpay"
+	}
+  }
+}
