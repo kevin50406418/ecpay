@@ -1,5 +1,7 @@
 <?php
 
+namespace ECPay\PaymentIntegration;
+
 /**
  * 付款方式。
  */

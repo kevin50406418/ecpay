@@ -2,7 +2,10 @@
 
 namespace Kevin50406418\ECPay;
 
-class ECPayFactory extends \ECPay_AllInOne
+use Ecpay\PaymentIntegration\ECPay_AllInOne;
+use Ecpay\PaymentIntegration\ECPay_CheckOutFeedback;
+
+class ECPayFactory extends ECPay_AllInOne
 {
     //產生訂單html code
     public function CheckOutString($paymentButton = null, $target = "_self")
@@ -25,6 +28,6 @@ class ECPayFactory extends \ECPay_AllInOne
     {
         $ecpayPost = $ecpayPost ? $ecpayPost : $_POST;
 
-        return \ECPay_CheckOutFeedback::CheckOut(array_merge($ecpayPost, ['EncryptType' => $this->EncryptType]));
+        return ECPay_CheckOutFeedback::CheckOut(array_merge($ecpayPost, ['EncryptType' => $this->EncryptType]));
     }
 }

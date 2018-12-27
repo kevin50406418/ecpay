@@ -20,11 +20,9 @@
 	"illuminate/view": "5.5.* || 5.6.* || 5.7.*"
   },
   "autoload": {
-	"classmap": [
-	  "src/lib"
-	],
 	"psr-4": {
-	  "Kevin50406418\\ECPay\\": "src/"
+	  "Kevin50406418\\ECPay\\": "src/",
+	  "ECPay\\": "lib/"
 	}
   },
   "config": {
@@ -35,10 +33,7 @@
 	"laravel": {
 	  "providers": [
 		"Kevin50406418\\ECPay\\ServiceProvider"
-	  ],
-	  "aliases": {
-		"ShoppingCart": "Kevin50406418\\ECPay\\Facade"
-	  }
+	  ]
 	}
   }
 }

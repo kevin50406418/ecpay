@@ -2,7 +2,10 @@
 
 namespace Kevin50406418\ECPay;
 
-class ECPaySend extends \ECPay_Send
+use Ecpay\PaymentIntegration\ECPay_Send;
+use Ecpay\PaymentIntegration\ECPay_CheckMacValue;
+
+class ECPaySend extends ECPay_Send
 {
     /**
      * @param string $paymentButton
@@ -19,7 +22,7 @@ class ECPaySend extends \ECPay_Send
     {
         $arParameters = self::process($arParameters, $arExtend);
         //產生檢查碼
-        $szCheckMacValue = \ECPay_CheckMacValue::generate($arParameters, $HashKey, $HashIV, $arParameters[ 'EncryptType' ]);
+        $szCheckMacValue = ECPay_CheckMacValue::generate($arParameters, $HashKey, $HashIV, $arParameters[ 'EncryptType' ]);
 
         $parameters = array_merge($arParameters, ['CheckMacValue' => $szCheckMacValue]);
 
