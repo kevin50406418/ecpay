@@ -2,10 +2,17 @@
 
 namespace Kevin50406418\ECPay;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
-class ECPayServiceProvider extends ServiceProvider
+class ServiceProvider extends LaravelServiceProvider
 {
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = true;
+
     /**
      * Bootstrap the application services.
      *
@@ -29,10 +36,11 @@ class ECPayServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //Facade => Custom Class
-        $this->app->singleton('ecpay', function ($app){
+        $this->app->singleton(ECPay::class, function ($app){
             return new ECPay();
         });
+
+        $this->app->alias(ECPay::class, 'ecpay');
     }
 
     /**
@@ -42,6 +50,6 @@ class ECPayServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['ecpay'];
+        return [ECPay::class, 'ecpay'];
     }
 }

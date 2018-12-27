@@ -34,8 +34,11 @@
   "extra": {
 	"laravel": {
 	  "providers": [
-		"Kevin50406418\\ECPay\\ECPayServiceProvider"
-	  ]
+		"Kevin50406418\\ECPay\\ServiceProvider"
+	  ],
+	  "aliases": {
+		"ShoppingCart": "Kevin50406418\\ECPay\\Facade"
+	  }
 	}
   }
 }
