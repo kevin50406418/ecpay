@@ -1,10 +1,10 @@
 <?php
 
-namespace Kevin50406418\Ecpay;
+namespace Kevin50406418\ECPay;
 
 use Illuminate\Support\ServiceProvider;
 
-class EcpayServiceProvider extends ServiceProvider
+class ECPayServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -31,7 +31,7 @@ class EcpayServiceProvider extends ServiceProvider
     {
         //Facade => Custom Class
         $this->app->singleton('ecpay', function ($app){
-            return new Ecpay();
+            return new ECPay();
         });
     }
 

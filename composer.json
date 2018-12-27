@@ -24,7 +24,7 @@
 	  "src/lib"
 	],
 	"psr-4": {
-	  "Kevin50406418\\Ecpay\\": "src/"
+	  "Kevin50406418\\ECPay\\": "src/"
 	}
   },
   "config": {
@@ -34,11 +34,8 @@
   "extra": {
 	"laravel": {
 	  "providers": [
-		"Kevin50406418\\Ecpay\\EcpayServiceProvider"
+		"Kevin50406418\\ECPay\\ECPayServiceProvider"
 	  ]
-	},
-	"aliases": {
-	  "Ecpay": "Kevin50406418\\Ecpay\\Facade\\Ecpay"
 	}
   }
 }

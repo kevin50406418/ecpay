@@ -1,14 +1,14 @@
 <?php
 
-namespace Kevin50406418\Ecpay;
+namespace Kevin50406418\ECPay;
 
-class Ecpay
+class ECPay
 {
     private $instance = null;
 
     public function __construct()
     {
-        $this->instance = new EcpayFactory();
+        $this->instance = new ECPayFactory();
         config('ecpay.TestMode', false) ? $this->setForTest() : $this->setForProd();
     }
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Kevin50406418\Ecpay;
+namespace Kevin50406418\ECPay;
 
-class EcpayFactory extends \ECPay_AllInOne
+class ECPayFactory extends \ECPay_AllInOne
 {
     //產生訂單html code
     public function CheckOutString($paymentButton = null, $target = "_self")

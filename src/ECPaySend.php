@@ -1,8 +1,8 @@
 <?php
 
-namespace Kevin50406418\Ecpay;
+namespace Kevin50406418\ECPay;
 
-class EcpaySend extends \ECPay_Send
+class ECPaySend extends \ECPay_Send
 {
     /**
      * @param string $paymentButton
