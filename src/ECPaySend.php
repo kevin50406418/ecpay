@@ -2,8 +2,8 @@
 
 namespace Kevin50406418\ECPay;
 
-use Ecpay\PaymentIntegration\ECPay_Send;
-use Ecpay\PaymentIntegration\ECPay_CheckMacValue;
+use ECPay\PaymentIntegration\ECPay_Send;
+use ECPay\PaymentIntegration\ECPay_CheckMacValue;
 
 class ECPaySend extends ECPay_Send
 {

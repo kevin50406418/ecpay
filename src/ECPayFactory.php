@@ -2,8 +2,8 @@
 
 namespace Kevin50406418\ECPay;
 
-use Ecpay\PaymentIntegration\ECPay_AllInOne;
-use Ecpay\PaymentIntegration\ECPay_CheckOutFeedback;
+use ECPay\PaymentIntegration\ECPay_AllInOne;
+use ECPay\PaymentIntegration\ECPay_CheckOutFeedback;
 
 class ECPayFactory extends ECPay_AllInOne
 {
