@@ -2,7 +2,7 @@
 
 namespace Kevin50406418\Ecpay;
 
-class EcpayAio
+class Ecpay
 {
     private $instance = null;
 
